@@ -23,6 +23,7 @@ type Chicken = {
     Name : string
 }
 
+[<CLIMutable>]
 type Pig = {
     Name : string
     Size : float
@@ -74,6 +75,10 @@ let pigHandler (name : string, size : float) =
     let p = Pig.create name size
     json p
 
+let xmlPigHandler (name : string, size : float) =
+    let p = Pig.create name size
+    xml p
+
 let webApp =
     choose [
         GET >=>
@@ -82,6 +87,7 @@ let webApp =
                 routef "/hello/%s" indexHandler
                 routef "/api/v2/test/%s" apiHandler
                 routef "/api/v2/pig/%s/%f" pigHandler
+                routef "/api/xml/pig/%s/%f" xmlPigHandler
             ]
         setStatusCode 404 >=> text "Not Found" ]
 
