@@ -1,0 +1,8 @@
+C:\Users\Matthew\Documents\GitHub\giraffe-test\src\giraffe-test\bin\Debug\netcoreapp2.0\WebRoot\main.css
+C:\Users\Matthew\Documents\GitHub\giraffe-test\src\giraffe-test\bin\Debug\netcoreapp2.0\giraffe_test.deps.json
+C:\Users\Matthew\Documents\GitHub\giraffe-test\src\giraffe-test\bin\Debug\netcoreapp2.0\giraffe_test.runtimeconfig.json
+C:\Users\Matthew\Documents\GitHub\giraffe-test\src\giraffe-test\bin\Debug\netcoreapp2.0\giraffe_test.runtimeconfig.dev.json
+C:\Users\Matthew\Documents\GitHub\giraffe-test\src\giraffe-test\bin\Debug\netcoreapp2.0\giraffe_test.dll
+C:\Users\Matthew\Documents\GitHub\giraffe-test\src\giraffe-test\bin\Debug\netcoreapp2.0\giraffe_test.pdb
+C:\Users\Matthew\Documents\GitHub\giraffe-test\src\giraffe-test\obj\Debug\netcoreapp2.0\giraffe_test.dll
+C:\Users\Matthew\Documents\GitHub\giraffe-test\src\giraffe-test\obj\Debug\netcoreapp2.0\giraffe_test.pdb
