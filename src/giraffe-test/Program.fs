@@ -21,8 +21,16 @@ type Message =
 
 type Chicken = {
     Name : string
-    Size : decimal
 }
+
+type Pig = {
+    Name : string
+    Size : float
+}
+
+module Pig =
+    let create n s =
+        {Name = n; Size = s}
 
 // ---------------------------------
 // Views
@@ -59,8 +67,12 @@ let indexHandler (name : string) =
     renderHtml view
 
 let apiHandler (name : string) =
-    let chicken = {Name = name; Size = 1337M }
+    let chicken = {Name = name}
     json chicken
+
+let pigHandler (name : string, size : float) =
+    let p = Pig.create name size
+    json p
 
 let webApp =
     choose [
@@ -68,7 +80,8 @@ let webApp =
             choose [
                 route "/" >=> indexHandler "world"
                 routef "/hello/%s" indexHandler
-                routef "/api/v2/test/%s" apiHandler 
+                routef "/api/v2/test/%s" apiHandler
+                routef "/api/v2/pig/%s/%f" pigHandler
             ]
         setStatusCode 404 >=> text "Not Found" ]
 
